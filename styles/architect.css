@@ -217,6 +217,22 @@ main {
 }
 
 
+.foot{
+  max-width: 1440px;
+  margin: 130px auto 150px;
+  text-align: center;
+  background-color: rgba(255, 244, 231, 1);
+  border-radius: 8px;
+
+}
+
+.footer-description{
+  color: #424242;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 38px 0;
+}
+
 
 
 
@@ -287,6 +303,10 @@ main {
   .team-content {
     margin-left: 0px;
     text-align: center;
+  }
+
+  .footer-description{
+    padding: 20px 10px;
   }
 }
 
