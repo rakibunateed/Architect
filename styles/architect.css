@@ -85,6 +85,56 @@
   width: 100%;
 }
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  margin: 80px 0 130px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-content {
+  margin-left: 130px;
+}
+
+.team-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#orange {
+  font-weight: bold;
+  color: rgba(255, 144, 14, 1);
+}
+
+#black {
+  font-weight: bold;
+  color: #131313;
+}
+
+#gray {
+  font-weight: 500;
+  color: #727272;
+}
+
+.team-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+
+
 
 
 
@@ -117,7 +167,9 @@
 /* responsive */
 
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links{
+
+  .navbar,
+  .nav-links {
     flex-direction: column;
   }
 }
