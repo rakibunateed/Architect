@@ -133,9 +133,69 @@ main {
   margin-bottom: 25px;
 }
 
+.feature{
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
 
+#feature-title-border{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
 
+.feature-title{
+  color: #131313;
+  font-size: 3rem;
+  font-weight: bold;
+}
 
+.feature-description{
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.feature-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card-title{
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 auto 0;
+}
+
+.card-description{
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#year{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#ex{
+  font-size: 1.56rem;
+  font-weight: 500;
+}
+
+#large-btn{
+  padding: 40px;
+  margin-left: -100px;
+  margin-top: -100px;
+ 
+}
+
+.architect img{
+  width: 100%;
+}
 
 .fact-title {
   color: #131313;
@@ -237,39 +297,13 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* responsive */
 
 @media screen and (max-width: 576px) {
 
   .navbar,
   .nav-links,
+  .feature,
   .teams {
     flex-direction: column;
   }
@@ -308,10 +342,15 @@ main {
   .footer-description{
     padding: 20px 10px;
   }
+
+  #large-btn{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 @media screen and (min-width:576px) and (max-width: 992px) {
-  .teams {
+  .teams, .feature {
     flex-direction: column;
   }
 
@@ -337,5 +376,10 @@ main {
     max-width: 60%;
     margin: 0px auto;
     text-align: center;
+  }
+
+   #large-btn{
+    margin-top: -80px;
+    margin-left: 0;
   }
 }
