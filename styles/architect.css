@@ -137,21 +137,21 @@ main {
 
 
 
-.fact-title{
+.fact-title {
   color: #131313;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.fact-description{
+.fact-description {
   color: #727272;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 80px;
 }
 
-.facts-content{
+.facts-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 90%;
@@ -159,7 +159,7 @@ main {
 }
 
 
-.fact{
+.fact {
   border: 1px solid rgba(255, 144, 14, 1);
   border-radius: 8px;
   height: 180px;
@@ -171,7 +171,7 @@ main {
   padding: 25px 35px;
 }
 
-.fact-number{
+.fact-number {
   color: #424242;
   font-size: 3rem;
   font-weight: 600;
@@ -179,11 +179,41 @@ main {
   padding: 8px 0px;
 }
 
-.fact-name{
+.fact-name {
   color: #727272;
   font-size: 20px;
   font-weight: 600;
-    margin: 0px;
+  margin: 0px;
+}
+
+.sponsor-content {
+  text-align: center;
+  margin: 150px 0 50px;
+}
+
+.sponsor-title {
+  color: #131313;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sponsor-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sponsor-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 80%;
+  margin: 0 auto;
+
+
+}
+
+.sponsor-img img {
+  filter: grayscale(100%);
 }
 
 
@@ -228,19 +258,29 @@ main {
     flex-direction: column;
   }
 
-  .img-container, .facts-content {
+  .img-container,
+  .facts-content {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .facts-content{
+  .sponsor-img {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 28px;
+    max-width: 45%;
+    margin: 0 auto;
+
+  }
+
+  .facts-content {
     justify-items: center;
   }
 
-  .fact-title, .fact-description{
+  .fact-title,
+  .fact-description {
     text-align: center;
   }
 
-  .facts-content{
+  .facts-content {
     gap: 24px;
   }
 
@@ -251,17 +291,24 @@ main {
 }
 
 @media screen and (min-width:576px) and (max-width: 992px) {
-  .teams{
+  .teams {
     flex-direction: column;
   }
 
-  .fact-title, .fact-description{
+  .fact-title,
+  .fact-description {
     text-align: center;
   }
 
- .facts-content {
+  .facts-content{
     grid-template-columns: repeat(2, 1fr);
     max-width: 60%;
+    margin: 0 auto;
+    gap: 24px;
+  }
+ .sponsor-img {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50%;
     margin: 0 auto;
     gap: 24px;
   }
