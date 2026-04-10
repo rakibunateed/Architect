@@ -169,7 +169,29 @@ main {
 @media screen and (max-width: 576px) {
 
   .navbar,
-  .nav-links {
+  .nav-links,
+  .teams {
     flex-direction: column;
+  }
+
+  .img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-content {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+  .teams{
+    flex-direction: column;
+  }
+
+  .team-content {
+    max-width: 60%;
+    margin: 0px auto;
+    text-align: center;
   }
 }
